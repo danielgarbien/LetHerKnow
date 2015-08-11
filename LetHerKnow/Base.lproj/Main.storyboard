@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-6y-Oda">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-0J-ake">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                        <state key="normal" title="Configure"/>
+                                        <connections>
+                                            <segue destination="QFP-84-LRc" kind="presentation" id="0hZ-I4-bw4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhN-6y-Oda" secondAttribute="bottom" id="LRU-80-6Se"/>
+                            <constraint firstItem="hhN-6y-Oda" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hYX-Z8-Y9c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hhN-6y-Oda" secondAttribute="trailing" id="j31-jY-vjA"/>
+                            <constraint firstItem="hhN-6y-Oda" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mkR-Br-Mcn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="419" y="390"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hL0-pv-VNv">
+            <objects>
+                <viewController id="QFP-84-LRc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7U-GS-Nh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="WPT-qG-UjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdo-ty-BjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XOu-I3-PeB">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G8-fB-w9J">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                        <state key="normal" title="Done"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XOu-I3-PeB" firstAttribute="leading" secondItem="jdo-ty-BjJ" secondAttribute="leadingMargin" id="4Ot-fq-HaD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XOu-I3-PeB" secondAttribute="trailing" id="8Wc-oo-U8A"/>
+                            <constraint firstItem="WPT-qG-UjT" firstAttribute="top" secondItem="XOu-I3-PeB" secondAttribute="bottom" id="o9c-gf-EuT"/>
+                            <constraint firstItem="XOu-I3-PeB" firstAttribute="top" secondItem="m7U-GS-Nh1" secondAttribute="bottom" id="sig-Pk-Lmz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yp-UL-M7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="1138"/>
         </scene>
     </scenes>
 </document>
