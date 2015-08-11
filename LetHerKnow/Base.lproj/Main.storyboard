@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="419" y="390"/>
         </scene>
-        <!--View Controller-->
+        <!--Configuration View Controller-->
         <scene sceneID="hL0-pv-VNv">
             <objects>
-                <viewController id="QFP-84-LRc" sceneMemberID="viewController">
+                <viewController id="QFP-84-LRc" customClass="ConfigurationViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m7U-GS-Nh1"/>
                         <viewControllerLayoutGuide type="bottom" id="WPT-qG-UjT"/>
@@ -61,6 +61,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G8-fB-w9J">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
                                         <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="doneTapped" destination="QFP-84-LRc" eventType="touchUpInside" id="vMF-a0-O79"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
