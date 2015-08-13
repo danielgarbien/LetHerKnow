@@ -19,7 +19,7 @@ extension NSManagedObjectContext {
         return soulmate
     }
     
-    func setSoulmate(identifier: String, displayName: String, phoneNumber: String) -> Contact {
+    func setSoulmateWithIdentifier(identifier: String, displayName: String, phoneNumber: String) -> Contact {
         var contact: Contact!
         self.performBlockAndWait {
             // remove old soulmate
