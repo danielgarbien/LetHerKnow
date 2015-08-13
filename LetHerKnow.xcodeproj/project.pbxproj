@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6559562C1B7C7FB2004E77A7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559562B1B7C7FB2004E77A7 /* CoreDataStack.swift */; };
+		6559562F1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559562E1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift */; };
 		659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B34331B7A23C800483C06 /* AppDelegate.swift */; };
 		659B34361B7A23C800483C06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B34351B7A23C800483C06 /* ViewController.swift */; };
 		659B34391B7A23C800483C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B34371B7A23C800483C06 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		6559562B1B7C7FB2004E77A7 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6559562E1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextHelper.swift; sourceTree = "<group>"; };
 		659B34301B7A23C800483C06 /* LetHerKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetHerKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659B34331B7A23C800483C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659B34351B7A23C800483C06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6559562B1B7C7FB2004E77A7 /* CoreDataStack.swift */,
+				6559562E1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift */,
 			);
 			name = Generic;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
 				659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */,
+				6559562F1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift in Sources */,
 				659B34651B7A3A7E00483C06 /* ConfigurationViewController.swift in Sources */,
 				6559562C1B7C7FB2004E77A7 /* CoreDataStack.swift in Sources */,
 			);
