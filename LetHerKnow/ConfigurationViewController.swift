@@ -37,11 +37,26 @@ class ConfigurationViewController: UIViewController, ContextAware {
 extension ConfigurationViewController: CNContactPickerDelegate {
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
-        soulmateLabel.text = contactProperty.contact.displayName()
+        let contact = contactProperty.contact
+        if let phoneNumber = contactProperty.value as? CNPhoneNumber {
+            mainContext.setSoulmateWithIdentifier(contact.identifier,
+                displayName: contact.displayName(),
+                phoneNumber: phoneNumber.stringValue)
+            soulmateLabel.text = mainContext.fetchSoulmate()!.displayName + " " + mainContext.fetchSoulmate()!.phoneNumber
+        } else {
+            assertionFailure()
+        }
     }
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
-        soulmateLabel.text = contact.displayName()
+        if let phoneNumber = contact.firstPhoneNumber() {
+            mainContext.setSoulmateWithIdentifier(contact.identifier,
+                displayName: contact.displayName(),
+                phoneNumber: phoneNumber)
+            soulmateLabel.text = mainContext.fetchSoulmate()!.displayName + " " + mainContext.fetchSoulmate()!.phoneNumber
+        } else {
+            assertionFailure()
+        }
     }
 }
 
@@ -53,5 +68,12 @@ private extension CNContact {
         }
         let nameComponents = [namePrefix, givenName, middleName, familyName, nameSuffix].filter(){ $0.isEmpty == false }
         return " ".join(nameComponents)
+    }
+    
+    func firstPhoneNumber() -> String? {
+        if let phoneNumber = phoneNumbers.first?.value as? CNPhoneNumber {
+            return phoneNumber.stringValue
+        }
+        return nil
     }
 }
