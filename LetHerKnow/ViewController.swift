@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ContextAware {
+    
+    var mainContext: NSManagedObjectContext!
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch segue.destinationViewController {
         case let cvc as ConfigurationViewController:
+            cvc.mainContext = mainContext
             cvc.delegate = self
         default:
             assertionFailure("Unrecognized segue destination view controller")

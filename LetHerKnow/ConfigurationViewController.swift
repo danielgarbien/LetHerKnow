@@ -8,13 +8,15 @@
 
 import Foundation
 import ContactsUI
+import CoreData
 
 protocol ConfigurationViewControllerDelegate {
     func configurationViewControllerDelegateDidFinish(viewController: ConfigurationViewController)
 }
 
-class ConfigurationViewController: UIViewController {
+class ConfigurationViewController: UIViewController, ContextAware {
     
+    var mainContext: NSManagedObjectContext!
     var delegate: ConfigurationViewControllerDelegate?
     @IBOutlet weak var soulmateLabel: UILabel!
     
@@ -53,4 +55,3 @@ private extension CNContact {
         return " ".join(nameComponents)
     }
 }
-

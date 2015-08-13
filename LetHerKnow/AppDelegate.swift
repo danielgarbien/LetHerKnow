@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         coreDataStack = CoreDataStack(momResourceName: "Model", storeFileName: "Model")
+        if let contextAware = window?.rootViewController as? ContextAware {
+            contextAware.mainContext = coreDataStack.mainContext
+        } else {
+            assertionFailure("Root view controller must be ContextAware")
+        }
         
         // Workaround for a beta 4 bug, permission should not be required, removed after it is resolved
         // https://forums.developer.apple.com/thread/12275
