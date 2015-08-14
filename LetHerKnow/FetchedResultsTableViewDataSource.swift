@@ -79,4 +79,17 @@ extension FetchedResultsTableViewDataSource: NSFetchedResultsControllerDelegate 
                 tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: .Automatic)
             }
     }
+    
+    func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int,
+        forChangeType type: NSFetchedResultsChangeType) {
+            let indexSet = NSIndexSet(index: sectionIndex)
+            switch type {
+            case .Insert:
+                tableView.insertSections(indexSet, withRowAnimation: .Automatic)
+            case .Delete:
+                tableView.deleteSections(indexSet, withRowAnimation: .Automatic)
+            default:
+                assertionFailure()
+            }
+    }
 }
