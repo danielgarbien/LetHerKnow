@@ -32,6 +32,15 @@ class ConfigurationViewController: UIViewController, ContextAware {
         contactPicker.delegate = self
         presentViewController(contactPicker, animated: true, completion: nil)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.destinationViewController {
+        case let ctvc as ConfigurationTableViewController:
+            ctvc.mainContext = mainContext
+        default:
+            assertionFailure()
+        }
+    }
 }
 
 extension ConfigurationViewController: CNContactPickerDelegate {
