@@ -36,12 +36,3 @@ extension NSManagedObjectContext {
         return contact
     }
 }
-
-extension NSFetchRequest {
-    
-    class func soulmateRequest() -> NSFetchRequest {
-        let request = NSFetchRequest(entityName: Contact.entityName)
-        request.predicate = NSPredicate(format: "soulmate == %@", NSNumber(bool: true))
-        return request
-    }
-}
