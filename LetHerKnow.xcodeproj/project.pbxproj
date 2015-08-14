@@ -18,7 +18,7 @@
 		659B34491B7A23C800483C06 /* LetHerKnowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B34481B7A23C800483C06 /* LetHerKnowTests.swift */; };
 		659B34541B7A23C800483C06 /* LetHerKnowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B34531B7A23C800483C06 /* LetHerKnowUITests.swift */; };
 		659B34651B7A3A7E00483C06 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B34641B7A3A7E00483C06 /* ConfigurationViewController.swift */; };
-		65AFC9631B7B7F5E00516B79 /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC9621B7B7F5E00516B79 /* ConfigurationTableViewController.swift */; };
+		65AFC9631B7B7F5E00516B79 /* SoulmateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC9621B7B7F5E00516B79 /* SoulmateTableViewController.swift */; };
 		65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC9651B7B8F5100516B79 /* Model.xcdatamodeld */; };
 		65AFC96B1B7B904300516B79 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC9691B7B904300516B79 /* Contact.swift */; };
 		65B7B4591B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4581B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift */; };
@@ -63,7 +63,7 @@
 		659B34531B7A23C800483C06 /* LetHerKnowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetHerKnowUITests.swift; sourceTree = "<group>"; };
 		659B34551B7A23C800483C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659B34641B7A3A7E00483C06 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
-		65AFC9621B7B7F5E00516B79 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
+		65AFC9621B7B7F5E00516B79 /* SoulmateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulmateTableViewController.swift; sourceTree = "<group>"; };
 		65AFC9661B7B8F5100516B79 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		65AFC9691B7B904300516B79 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		65B7B4581B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 			children = (
 				65B7B4681B7E0B79008C3EF4 /* Helpers */,
 				659B34641B7A3A7E00483C06 /* ConfigurationViewController.swift */,
-				65AFC9621B7B7F5E00516B79 /* ConfigurationTableViewController.swift */,
+				65AFC9621B7B7F5E00516B79 /* SoulmateTableViewController.swift */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */,
-				65AFC9631B7B7F5E00516B79 /* ConfigurationTableViewController.swift in Sources */,
+				65AFC9631B7B7F5E00516B79 /* SoulmateTableViewController.swift in Sources */,
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
 				65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */,
 				65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 import CoreData
 import ContactsUI
 
-class ConfigurationTableViewController: UITableViewController, ContextAware {
+class SoulmateTableViewController: UITableViewController, ContextAware {
 
     private static let contactCellIdentifier = "contactCellIdentifier"
     private var fetchedResultsDataSource: FetchedResultsTableViewDataSource?
@@ -28,7 +28,7 @@ class ConfigurationTableViewController: UITableViewController, ContextAware {
     override func viewDidLoad() {
         // register a cell class
         tableView.registerClass(UITableViewCell.classForCoder(),
-            forCellReuseIdentifier: ConfigurationTableViewController.contactCellIdentifier)
+            forCellReuseIdentifier: SoulmateTableViewController.contactCellIdentifier)
         
         // pin a fetched results data source to the table view
         let resultsController = NSFetchedResultsController.soulmateFetchedResultsControllerWithContext(mainContext)
@@ -39,12 +39,12 @@ class ConfigurationTableViewController: UITableViewController, ContextAware {
 }
 
 // MARK: FetchedResultsCellProvider
-extension ConfigurationTableViewController: FetchedResultsCellProvider {
+extension SoulmateTableViewController: FetchedResultsCellProvider {
     
     func fetchedResultsTableViewDataSource(dataSource: FetchedResultsTableViewDataSource,
         cellForObject object: AnyObject, atIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let contact = object as! Contact
-            let cell = tableView.dequeueReusableCellWithIdentifier(ConfigurationTableViewController.contactCellIdentifier)!
+            let cell = tableView.dequeueReusableCellWithIdentifier(SoulmateTableViewController.contactCellIdentifier)!
             cell.textLabel?.text = contact.displayName
             cell.detailTextLabel?.text = contact.phoneNumber
             

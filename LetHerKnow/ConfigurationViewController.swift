@@ -25,8 +25,8 @@ class ConfigurationViewController: UIViewController, ContextAware {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch segue.destinationViewController {
-        case let ctvc as ConfigurationTableViewController:
-            ctvc.mainContext = mainContext
+        case let stvc as SoulmateTableViewController:
+            stvc.mainContext = mainContext
         default:
             assertionFailure()
         }

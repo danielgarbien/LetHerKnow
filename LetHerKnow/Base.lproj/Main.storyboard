@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="419" y="1138"/>
         </scene>
-        <!--Configuration Table View Controller-->
+        <!--Soulmate Table View Controller-->
         <scene sceneID="pM6-Py-UYG">
             <objects>
-                <tableViewController id="Lad-SO-96z" customClass="ConfigurationTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Lad-SO-96z" customClass="SoulmateTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dum-RD-VSX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
