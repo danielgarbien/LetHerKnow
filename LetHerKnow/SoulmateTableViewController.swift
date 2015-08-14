@@ -56,7 +56,7 @@ private extension NSFetchedResultsController {
     
     class func soulmateFetchedResultsControllerWithContext(context: NSManagedObjectContext) -> NSFetchedResultsController {
         let request = NSFetchRequest.soulmateRequest()
-        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: "soulmate", cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         return controller
     }
 }
