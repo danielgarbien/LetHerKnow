@@ -27,6 +27,8 @@ class ConfigurationViewController: UIViewController, ContextAware {
         switch segue.destinationViewController {
         case let stvc as SoulmateTableViewController:
             stvc.mainContext = mainContext
+        case let btvc as BuddiesTableViewController:
+            btvc.mainContext = mainContext
         default:
             assertionFailure()
         }

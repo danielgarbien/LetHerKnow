@@ -25,6 +25,7 @@
 		65B7B45B1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */; };
 		65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */; };
 		65B7B4651B7E0B50008C3EF4 /* SingleContactPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4641B7E0B50008C3EF4 /* SingleContactPickerDelegate.swift */; };
+		65B7B46B1B7E1D88008C3EF4 /* BuddiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B46A1B7E1D88008C3EF4 /* BuddiesTableViewController.swift */; };
 		65B7B46D1B7E235B008C3EF4 /* BuddiesContactPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B46C1B7E235B008C3EF4 /* BuddiesContactPickerDelegate.swift */; };
 		65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchRequest+Contact.swift"; sourceTree = "<group>"; };
 		65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CNContact+Convenience.swift"; sourceTree = "<group>"; };
 		65B7B4641B7E0B50008C3EF4 /* SingleContactPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleContactPickerDelegate.swift; sourceTree = "<group>"; };
+		65B7B46A1B7E1D88008C3EF4 /* BuddiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesTableViewController.swift; sourceTree = "<group>"; };
 		65B7B46C1B7E235B008C3EF4 /* BuddiesContactPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesContactPickerDelegate.swift; sourceTree = "<group>"; };
 		65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +209,7 @@
 				65B7B4681B7E0B79008C3EF4 /* Helpers */,
 				659B34641B7A3A7E00483C06 /* ConfigurationViewController.swift */,
 				65AFC9621B7B7F5E00516B79 /* SoulmateTableViewController.swift */,
+				65B7B46A1B7E1D88008C3EF4 /* BuddiesTableViewController.swift */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				65AFC9631B7B7F5E00516B79 /* SoulmateTableViewController.swift in Sources */,
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
 				65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */,
+				65B7B46B1B7E1D88008C3EF4 /* BuddiesTableViewController.swift in Sources */,
 				65B7B46D1B7E235B008C3EF4 /* BuddiesContactPickerDelegate.swift in Sources */,
 				65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */,
 				659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */,
