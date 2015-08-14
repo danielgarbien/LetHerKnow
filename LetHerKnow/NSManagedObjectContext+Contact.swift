@@ -35,4 +35,16 @@ extension NSManagedObjectContext {
         }
         return contact
     }
+    
+    func addBuddyWithIdentifier(identifier: String, displayName: String, phoneNumber: String) -> Contact {
+        var contact: Contact!
+        self.performBlockAndWait {
+            contact = Contact(context: self,
+                identifier: identifier,
+                displayName: displayName,
+                phoneNumber: phoneNumber,
+                soulmate: false)
+        }
+        return contact
+    }
 }
