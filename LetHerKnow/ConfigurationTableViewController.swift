@@ -9,12 +9,21 @@
 import Foundation
 import UIKit
 import CoreData
+import ContactsUI
 
 class ConfigurationTableViewController: UITableViewController, ContextAware {
 
     private static let contactCellIdentifier = "contactCellIdentifier"
     private var fetchedResultsDataSource: FetchedResultsTableViewDataSource?
     var mainContext: NSManagedObjectContext!
+    private lazy var contactPickerDelegate: SingleContactPickerDelegate = {
+        return SingleContactPickerDelegate(context: self.mainContext)
+        }()
+    
+    @IBAction func addTapped() {
+        let contactPicker = CNContactPickerViewController.soulmateContactPickerWithDelegate(contactPickerDelegate)
+        presentViewController(contactPicker, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         // register a cell class
@@ -29,6 +38,7 @@ class ConfigurationTableViewController: UITableViewController, ContextAware {
     }
 }
 
+// MARK: FetchedResultsCellProvider
 extension ConfigurationTableViewController: FetchedResultsCellProvider {
     
     func fetchedResultsTableViewDataSource(dataSource: FetchedResultsTableViewDataSource,
@@ -48,5 +58,17 @@ private extension NSFetchedResultsController {
         let request = NSFetchRequest.soulmateRequest()
         let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: "soulmate", cacheName: nil)
         return controller
+    }
+}
+
+private extension CNContactPickerViewController {
+    
+    class func soulmateContactPickerWithDelegate(delegate: CNContactPickerDelegate) -> CNContactPickerViewController {
+        let contactPicker = CNContactPickerViewController()
+        contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
+        contactPicker.predicateForEnablingContact = NSPredicate(format: "phoneNumbers.@count > 0")
+        contactPicker.predicateForSelectionOfContact = NSPredicate(format: "phoneNumbers.@count == 1")
+        contactPicker.delegate = delegate
+        return contactPicker
     }
 }

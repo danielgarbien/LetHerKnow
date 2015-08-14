@@ -111,6 +111,9 @@
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="2dM-yP-Q2q"/>
                                     </constraints>
                                     <state key="normal" title="Add"/>
+                                    <connections>
+                                        <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="YBl-2W-YD6"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
