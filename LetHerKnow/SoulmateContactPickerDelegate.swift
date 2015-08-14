@@ -1,5 +1,5 @@
 //
-//  SingleContactPickerDelegate.swift
+//  SoulmateContactPickerDelegate.swift
 //  LetHerKnow
 //
 //  Created by Daniel Garbień on 14/08/15.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import ContactsUI
 
-class SingleContactPickerDelegate: NSObject, CNContactPickerDelegate {
+class SoulmateContactPickerDelegate: NSObject, CNContactPickerDelegate {
     
     private let context: NSManagedObjectContext
     

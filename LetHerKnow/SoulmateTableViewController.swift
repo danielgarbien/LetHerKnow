@@ -16,8 +16,8 @@ class SoulmateTableViewController: UITableViewController, ContextAware {
     private static let contactCellIdentifier = "contactCellIdentifier"
     private var fetchedResultsDataSource: FetchedResultsTableViewDataSource?
     var mainContext: NSManagedObjectContext!
-    private lazy var contactPickerDelegate: SingleContactPickerDelegate = {
-        return SingleContactPickerDelegate(context: self.mainContext)
+    private lazy var contactPickerDelegate: SoulmateContactPickerDelegate = {
+        return SoulmateContactPickerDelegate(context: self.mainContext)
         }()
     
     @IBAction func addTapped() {
