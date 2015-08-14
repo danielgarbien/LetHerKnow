@@ -23,6 +23,7 @@
 		65AFC96B1B7B904300516B79 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC9691B7B904300516B79 /* Contact.swift */; };
 		65B7B4591B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4581B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift */; };
 		65B7B45B1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */; };
+		65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */; };
 		65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		65AFC9691B7B904300516B79 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		65B7B4581B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewDataSource.swift; sourceTree = "<group>"; };
 		65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchRequest+Contact.swift"; sourceTree = "<group>"; };
+		65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CNContact+Convenience.swift"; sourceTree = "<group>"; };
 		65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 		65AFC9641B7B8F2D00516B79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65B7B4611B7E0A9F008C3EF4 /* Contacts */,
 				6559562D1B7CB72F004E77A7 /* Generic */,
 				65AFC9651B7B8F5100516B79 /* Model.xcdatamodeld */,
 				65AFC9691B7B904300516B79 /* Contact.swift */,
@@ -185,6 +188,14 @@
 				65B7B4581B7DCAF7008C3EF4 /* FetchedResultsTableViewDataSource.swift */,
 			);
 			name = Generic;
+			sourceTree = "<group>";
+		};
+		65B7B4611B7E0A9F008C3EF4 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */,
+			);
+			name = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 				65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */,
 				65AFC9631B7B7F5E00516B79 /* ConfigurationTableViewController.swift in Sources */,
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
+				65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */,
 				65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */,
 				659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */,
 				6559562F1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift in Sources */,
