@@ -12,6 +12,5 @@ import Contacts
 
 protocol ContactPickerHandler {
 
-    init(context: NSManagedObjectContext)
     func handleContact(contact: CNContact, withPhoneNumber phoneNumber: String)
 }
