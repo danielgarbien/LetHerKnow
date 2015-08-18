@@ -24,11 +24,18 @@ class ConfigurationViewController: UIViewController, ContextAware {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        switch segue.destinationViewController {
-        case let stvc as SoulmateTableViewController:
-            stvc.mainContext = mainContext
-        case let btvc as BuddiesTableViewController:
-            btvc.mainContext = mainContext
+        guard let identifier = segue.identifier else {
+            assertionFailure()
+            return
+        }
+        
+        switch (segue.destinationViewController, identifier) {
+        case let (vc as ContactsTableViewController, "soulmateSegue"):
+            vc.mainContext = mainContext
+            vc.internalsFactory = SoulmateTableInternalsFactory()
+        case let (vc as ContactsTableViewController, "buddiesSegue"):
+            vc.mainContext = mainContext
+            vc.internalsFactory = BuddiesTableInternalsFactory()
         default:
             assertionFailure()
         }
