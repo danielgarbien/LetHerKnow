@@ -1,29 +1,26 @@
 //
-//  SoulmateContactPickerDelegate.swift
+//  ContactPickerDelegate.swift
 //  LetHerKnow
 //
-//  Created by Daniel Garbień on 14/08/15.
+//  Created by Daniel Garbień on 18/08/15.
 //  Copyright © 2015 Daniel Garbień. All rights reserved.
 //
 
 import Foundation
-import CoreData
 import ContactsUI
 
-class SoulmateContactPickerDelegate: NSObject, CNContactPickerDelegate {
+class ContactPickerDelegate: NSObject, CNContactPickerDelegate {
     
-    private let context: NSManagedObjectContext
+    private let contactPickerHandler: ContactPickerHandler
     
-    init(context: NSManagedObjectContext) {
-        self.context = context
+    init(contactPickerHandler: ContactPickerHandler) {
+        self.contactPickerHandler = contactPickerHandler
     }
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
         let contact = contactProperty.contact
         if let phoneNumber = contactProperty.value as? CNPhoneNumber {
-            context.setSoulmateWithIdentifier(contact.identifier,
-                displayName: contact.displayName(),
-                phoneNumber: phoneNumber.stringValue)
+            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber.stringValue)
         } else {
             assertionFailure()
         }
@@ -31,9 +28,7 @@ class SoulmateContactPickerDelegate: NSObject, CNContactPickerDelegate {
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
         if let phoneNumber = contact.firstPhoneNumber() {
-            context.setSoulmateWithIdentifier(contact.identifier,
-                displayName: contact.displayName(),
-                phoneNumber: phoneNumber)
+            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber)
         } else {
             assertionFailure()
         }

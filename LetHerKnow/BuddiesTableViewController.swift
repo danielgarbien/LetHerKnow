@@ -16,8 +16,8 @@ class BuddiesTableViewController: UITableViewController, ContextAware {
     private static let contactCellIdentifier = "contactCellIdentifier"
     private var fetchedResultsDataSource: FetchedResultsTableViewDataSource?
     var mainContext: NSManagedObjectContext!
-    private lazy var contactPickerDelegate: BuddiesContactPickerDelegate = {
-        return BuddiesContactPickerDelegate(context: self.mainContext)
+    private lazy var contactPickerDelegate: ContactPickerDelegate = {
+        return ContactPickerDelegate(contactPickerHandler: BuddyContactPickerHandler(context: self.mainContext))
         }()
     
     @IBAction func addTapped() {
