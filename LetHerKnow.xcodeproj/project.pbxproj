@@ -172,12 +172,20 @@
 		659B34661B7A3A8200483C06 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65A5964E1B8373AC00A4EEAC /* Protocols */,
 				65B7B4661B7E0B5A008C3EF4 /* Configuration */,
 				65B7B4571B7DCAC9008C3EF4 /* Generic */,
 				659B34351B7A23C800483C06 /* ViewController.swift */,
-				65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		65A5964E1B8373AC00A4EEAC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		65AFC9641B7B8F2D00516B79 /* Model */ = {
