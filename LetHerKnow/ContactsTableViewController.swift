@@ -40,6 +40,9 @@ class ContactsTableViewController: UITableViewController, ContextAware {
         tableView.registerClass(UITableViewCell.classForCoder(),
             forCellReuseIdentifier: ContactsTableViewController.contactCellIdentifier)
         
+        // clear footer view
+        tableView.tableFooterView = UIView()
+        
         // pin a fetched results data source to the table view
         let resultsController = NSFetchedResultsController.fetchedResultsControllerWithContext(mainContext, fetchRequest: internalsFactory.fetchRequest())
         fetchedResultsDataSource = FetchedResultsTableViewDataSource(tableView: tableView,

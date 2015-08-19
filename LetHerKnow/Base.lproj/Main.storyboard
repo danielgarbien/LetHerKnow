@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Let Her Know-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,16 +38,16 @@
                             <constraint firstItem="hhN-6y-Oda" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mkR-Br-Mcn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="x8v-QG-ykD"/>
+                    <navigationItem key="navigationItem" title="Let Her Know" id="x8v-QG-ykD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="390"/>
+            <point key="canvasLocation" x="1254" y="349"/>
         </scene>
-        <!--Configuration View Controller-->
+        <!--Configuration-->
         <scene sceneID="hL0-pv-VNv">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QFP-84-LRc" customClass="ConfigurationViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Configuration" automaticallyAdjustsScrollViewInsets="NO" id="QFP-84-LRc" customClass="ConfigurationViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m7U-GS-Nh1"/>
                         <viewControllerLayoutGuide type="bottom" id="WPT-qG-UjT"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WPT-qG-UjT" firstAttribute="top" secondItem="Da8-gg-6RC" secondAttribute="bottom" id="ADE-u5-olZ"/>
                             <constraint firstAttribute="trailing" secondItem="Fmz-yz-JVY" secondAttribute="trailing" id="Ckt-e5-Q3s"/>
@@ -111,7 +111,7 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="2dM-yP-Q2q"/>
                                     </constraints>
-                                    <state key="normal" title="Add"/>
+                                    <state key="normal" title="Set"/>
                                     <connections>
                                         <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="YBl-2W-YD6"/>
                                     </connections>
@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="1205" y="1598"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Let Her Know-->
         <scene sceneID="UJG-hh-uBE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ovs-xG-ep6" sceneMemberID="viewController">
+                <navigationController title="Let Her Know" automaticallyAdjustsScrollViewInsets="NO" id="Ovs-xG-ep6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wu1-hL-MCy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -241,7 +241,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQQ-AN-VgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="390"/>
+            <point key="canvasLocation" x="409" y="349"/>
         </scene>
     </scenes>
 </document>
