@@ -15,7 +15,7 @@ protocol ContactsTableInternalsFactory {
     
     func fetchRequest() -> NSFetchRequest
     func contactPickerHandlerWithContext(context: NSManagedObjectContext) -> ContactPickerHandler
-    func contactPickerViewController() -> CNContactPickerViewController
+    func contactPickerViewControllerWithContext(context: NSManagedObjectContext) -> CNContactPickerViewController
 }
 
 class ContactsTableViewController: UITableViewController, ContextAware {
@@ -30,7 +30,7 @@ class ContactsTableViewController: UITableViewController, ContextAware {
     var internalsFactory: ContactsTableInternalsFactory!
     
     @IBAction func addTapped() {
-        let contactPicker = internalsFactory.contactPickerViewController()
+        let contactPicker = internalsFactory.contactPickerViewControllerWithContext(mainContext)
         contactPicker.delegate = contactPickerDelegate
         presentViewController(contactPicker, animated: true, completion: nil)
     }

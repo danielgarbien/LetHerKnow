@@ -20,10 +20,19 @@ struct SoulmateTableInternalsFactory: ContactsTableInternalsFactory {
         return SoulmateContactPickerHandler(context: context)
     }
     
-    func contactPickerViewController() -> CNContactPickerViewController {
+    func contactPickerViewControllerWithContext(context: NSManagedObjectContext) -> CNContactPickerViewController {
         let contactPicker = CNContactPickerViewController()
         contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
-        contactPicker.predicateForEnablingContact = NSPredicate(format: "phoneNumbers.@count > 0")
+        
+        if let soulmate = context.fetchSoulmate() {
+            // Disable soulmate contact from selection if has exactly 1 phone number
+            contactPicker.predicateForEnablingContact = NSPredicate(
+                format: "(phoneNumbers.@count == 1 && identifier != %@) || phoneNumbers.@count > 1",
+                soulmate.identifier)
+        } else {
+            contactPicker.predicateForEnablingContact = NSPredicate(format: "phoneNumbers.@count > 0")
+        }
+        
         contactPicker.predicateForSelectionOfContact = NSPredicate(format: "phoneNumbers.@count == 1")
         return contactPicker
     }

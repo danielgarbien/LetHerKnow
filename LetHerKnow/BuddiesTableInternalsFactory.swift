@@ -20,7 +20,7 @@ struct BuddiesTableInternalsFactory: ContactsTableInternalsFactory {
         return BuddyContactPickerHandler(context: context)
     }
     
-    func contactPickerViewController() -> CNContactPickerViewController {
+    func contactPickerViewControllerWithContext(context: NSManagedObjectContext) -> CNContactPickerViewController {
         let contactPicker = CNContactPickerViewController()
         contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
         contactPicker.predicateForEnablingContact = NSPredicate(format: "phoneNumbers.@count > 0")
