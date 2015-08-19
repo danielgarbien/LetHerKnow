@@ -53,6 +53,21 @@ extension FetchedResultsTableViewDataSource: UITableViewDataSource {
             cellForObject: object,
             atIndexPath: indexPath)
     }
+    
+    // MARK: Deleting rows
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let context = fetchedResultsController.managedObjectContext
+            let object = fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
+            context.performBlockAndWait {
+                context.deleteObject(object)
+            }
+        }
+    }
 }
 
 // MARK: NSFetchedResultsControllerDelegate
