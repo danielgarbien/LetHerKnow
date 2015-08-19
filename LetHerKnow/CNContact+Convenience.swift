@@ -18,11 +18,4 @@ extension CNContact {
         let nameComponents = [namePrefix, givenName, middleName, familyName, nameSuffix].filter(){ $0.isEmpty == false }
         return " ".join(nameComponents)
     }
-    
-    func firstPhoneNumber() -> String? {
-        if let phoneNumber = phoneNumbers.first?.value as? CNPhoneNumber {
-            return phoneNumber.stringValue
-        }
-        return nil
-    }
 }

@@ -16,14 +16,30 @@ class Contact: NSManagedObject {
     convenience init(context: NSManagedObjectContext,
         identifier: String,
         displayName: String,
+        soulmate: Bool,
         phoneNumber: String,
-        soulmate: Bool) {
+        phoneNumberIdentifier: String) {
             let entity = NSEntityDescription.entityForName(Contact.entityName, inManagedObjectContext: context)!
             self.init(entity: entity, insertIntoManagedObjectContext: context)
             
             self.identifier = identifier
             self.displayName = displayName
-            self.phoneNumber = phoneNumber
             self.soulmate = soulmate
+            self.phoneNumber = PhoneNumber(context: context, identifier: phoneNumberIdentifier, value: phoneNumber)
+    }
+}
+
+private extension PhoneNumber {
+    
+    static let entityName = "PhoneNumber"
+    
+    convenience init(context: NSManagedObjectContext,
+        identifier: String,
+        value: String) {
+            let entity = NSEntityDescription.entityForName(PhoneNumber.entityName, inManagedObjectContext: context)!
+            self.init(entity: entity, insertIntoManagedObjectContext: context)
+            
+            self.identifier = identifier
+            self.value = value
     }
 }

@@ -19,16 +19,16 @@ class ContactPickerDelegate: NSObject, CNContactPickerDelegate {
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
         let contact = contactProperty.contact
-        if let phoneNumber = contactProperty.value as? CNPhoneNumber {
-            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber.stringValue)
+        if let phoneNumber = contactProperty.value as? CNPhoneNumber, identifier = contactProperty.identifier {
+            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber, phoneNumberIdentifier: identifier)
         } else {
             assertionFailure()
         }
     }
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
-        if let phoneNumber = contact.firstPhoneNumber() {
-            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber)
+        if let phoneNumber = contact.phoneNumbers.first?.value as? CNPhoneNumber, identifier = contact.phoneNumbers.first?.identifier {
+            contactPickerHandler.handleContact(contact, withPhoneNumber: phoneNumber, phoneNumberIdentifier: identifier)
         } else {
             assertionFailure()
         }

@@ -18,9 +18,10 @@ class BuddyContactPickerHandler: ContactPickerHandler {
         self.context = context
     }
     
-    func handleContact(contact: CNContact, withPhoneNumber phoneNumber: String) {
+    func handleContact(contact: CNContact, withPhoneNumber phoneNumber: CNPhoneNumber, phoneNumberIdentifier: String) {
         context.addBuddyWithIdentifier(contact.identifier,
             displayName: contact.displayName(),
-            phoneNumber: phoneNumber)
+            phoneNumber: phoneNumber.stringValue,
+            phoneNumberIdentifier: phoneNumberIdentifier)
     }
 }

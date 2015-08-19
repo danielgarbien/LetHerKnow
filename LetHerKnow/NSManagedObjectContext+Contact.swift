@@ -19,7 +19,7 @@ extension NSManagedObjectContext {
         return soulmate
     }
     
-    func setSoulmateWithIdentifier(identifier: String, displayName: String, phoneNumber: String) -> Contact {
+    func setSoulmateWithIdentifier(identifier: String, displayName: String, phoneNumber: String, phoneNumberIdentifier: String) -> Contact {
         var contact: Contact!
         self.performBlockAndWait {
             // remove old soulmate
@@ -30,20 +30,22 @@ extension NSManagedObjectContext {
             contact = Contact(context: self,
                 identifier: identifier,
                 displayName: displayName,
+                soulmate: true,
                 phoneNumber: phoneNumber,
-                soulmate: true)
+                phoneNumberIdentifier: phoneNumberIdentifier)
         }
         return contact
     }
     
-    func addBuddyWithIdentifier(identifier: String, displayName: String, phoneNumber: String) -> Contact {
+    func addBuddyWithIdentifier(identifier: String, displayName: String, phoneNumber: String, phoneNumberIdentifier: String) -> Contact {
         var contact: Contact!
         self.performBlockAndWait {
             contact = Contact(context: self,
                 identifier: identifier,
                 displayName: displayName,
+                soulmate: false,
                 phoneNumber: phoneNumber,
-                soulmate: false)
+                phoneNumberIdentifier: phoneNumberIdentifier)
         }
         return contact
     }

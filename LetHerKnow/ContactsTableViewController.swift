@@ -56,7 +56,7 @@ extension ContactsTableViewController: FetchedResultsCellProvider {
             let contact = object as! Contact
             let cell = tableView.dequeueReusableCellWithIdentifier(ContactsTableViewController.contactCellIdentifier)!
             cell.textLabel?.text = contact.displayName
-            cell.detailTextLabel?.text = contact.phoneNumber
+            cell.detailTextLabel?.text = contact.phoneNumber.value
             
             return cell
     }

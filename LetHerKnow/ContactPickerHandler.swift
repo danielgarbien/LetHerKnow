@@ -12,5 +12,5 @@ import Contacts
 
 protocol ContactPickerHandler {
 
-    func handleContact(contact: CNContact, withPhoneNumber phoneNumber: String)
+    func handleContact(contact: CNContact, withPhoneNumber phoneNumber: CNPhoneNumber, phoneNumberIdentifier: String)
 }
