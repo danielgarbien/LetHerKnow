@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         coreDataStack = CoreDataStack(momResourceName: "Model", storeFileName: "Model")
-        if let contextAware = window?.rootViewController as? ContextAware {
+        let navigationController = window?.rootViewController as! UINavigationController
+        if let contextAware = navigationController.childViewControllers.first as? ContextAware {
             contextAware.mainContext = coreDataStack.mainContext
         } else {
             assertionFailure("Root view controller must be ContextAware")
