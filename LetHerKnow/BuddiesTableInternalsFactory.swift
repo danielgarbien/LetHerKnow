@@ -23,8 +23,19 @@ struct BuddiesTableInternalsFactory: ContactsTableInternalsFactory {
     func contactPickerViewControllerWithContext(context: NSManagedObjectContext) -> CNContactPickerViewController {
         let contactPicker = CNContactPickerViewController()
         contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
-        contactPicker.predicateForEnablingContact = NSPredicate(format: "phoneNumbers.@count > 0")
+        
+        let buddiesPhoneNumbersIdentifiers = context.fetchBuddies().map{ $0.phoneNumber.identifier }
+        // Disable contacts with all phone numbers already added
+        contactPicker.predicateForEnablingContact = NSPredicate(
+            format: "NOT (ALL phoneNumbers.identifier IN %@)",
+            buddiesPhoneNumbersIdentifiers)
+        
+        // Disable properties already added
+        contactPicker.predicateForSelectionOfProperty = NSPredicate(
+            format: "NOT (identifier IN %@)", buddiesPhoneNumbersIdentifiers)
+        
         contactPicker.predicateForSelectionOfContact = NSPredicate(format: "phoneNumbers.@count == 1")
+        
         return contactPicker
     }
 }

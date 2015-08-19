@@ -19,6 +19,14 @@ extension NSManagedObjectContext {
         return soulmate
     }
     
+    func fetchBuddies() -> [Contact] {
+        var buddies = [Contact]()
+        self.performFetchAndWait(NSFetchRequest.buddiesRequest()) { (results) -> Void in
+            buddies = results as? [Contact] ?? []
+        }
+        return buddies
+    }
+    
     func setSoulmateWithIdentifier(identifier: String, displayName: String, phoneNumber: String, phoneNumberIdentifier: String) -> Contact {
         var contact: Contact!
         self.performBlockAndWait {
