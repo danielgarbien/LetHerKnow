@@ -11,11 +11,6 @@ import CoreData
 
 class Contact: NSManagedObject {
     
-    @NSManaged private(set) var identifier: String
-    @NSManaged private(set) var displayName: String
-    @NSManaged private(set) var phoneNumber: String
-    @NSManaged private(set) var soulmate: Bool
-    
     static let entityName = "Contact"
 
     convenience init(context: NSManagedObjectContext,

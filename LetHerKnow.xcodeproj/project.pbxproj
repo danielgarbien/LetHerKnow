@@ -30,6 +30,9 @@
 		65B7B45B1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */; };
 		65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */; };
 		65B7B46D1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B46C1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift */; };
+		65F224251B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */; };
+		65F224261B847C7100F0D3B1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224231B847C7100F0D3B1 /* PhoneNumber.swift */; };
+		65F224271B847C7100F0D3B1 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */; };
 		65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,9 @@
 		65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchRequest+Contact.swift"; sourceTree = "<group>"; };
 		65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CNContact+Convenience.swift"; sourceTree = "<group>"; };
 		65B7B46C1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyContactPickerHandler.swift; sourceTree = "<group>"; };
+		65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65F224231B847C7100F0D3B1 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65FF92F41B7CDBBE0011C7CC /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,12 +197,14 @@
 		65AFC9641B7B8F2D00516B79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65F224281B847CC400F0D3B1 /* Helpers */,
 				65B7B4611B7E0A9F008C3EF4 /* Contacts */,
 				6559562D1B7CB72F004E77A7 /* Generic */,
 				65AFC9651B7B8F5100516B79 /* Model.xcdatamodeld */,
 				65AFC9691B7B904300516B79 /* Contact.swift */,
-				655956301B7CCB34004E77A7 /* NSManagedObjectContext+Contact.swift */,
-				65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */,
+				65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */,
+				65F224231B847C7100F0D3B1 /* PhoneNumber.swift */,
+				65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,6 +244,15 @@
 				65A596421B83579500A4EEAC /* ContactPickerHandler.swift */,
 				65B7B46C1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift */,
 				65A596461B83596A00A4EEAC /* SoulmateContactPickerHandler.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		65F224281B847CC400F0D3B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				655956301B7CCB34004E77A7 /* NSManagedObjectContext+Contact.swift */,
+				65B7B45A1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -371,12 +388,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */,
+				65F224251B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift in Sources */,
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
 				65A596491B835D5A00A4EEAC /* ContactsTableViewController.swift in Sources */,
 				65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */,
 				65A596471B83596A00A4EEAC /* SoulmateContactPickerHandler.swift in Sources */,
+				65F224271B847C7100F0D3B1 /* Contact+CoreDataProperties.swift in Sources */,
 				65A5964D1B836C2B00A4EEAC /* BuddiesTableInternalsFactory.swift in Sources */,
 				65A5964B1B83629300A4EEAC /* SoulmateTableInternalsFactory.swift in Sources */,
+				65F224261B847C7100F0D3B1 /* PhoneNumber.swift in Sources */,
 				65B7B46D1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift in Sources */,
 				65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */,
 				659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */,
