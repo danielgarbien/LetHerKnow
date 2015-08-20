@@ -110,16 +110,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmz-yz-JVY">
-                                <rect key="frame" x="0.0" y="64" width="600" height="88"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="aSe-bM-brH"/>
+                                    <constraint firstAttribute="height" constant="100" id="aSe-bM-brH"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="Lad-SO-96z" kind="embed" identifier="soulmateSegue" id="Xv8-QW-zoy"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da8-gg-6RC">
-                                <rect key="frame" x="0.0" y="160" width="600" height="440"/>
+                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
                                 <connections>
                                     <segue destination="5Zr-fd-9bX" kind="embed" identifier="buddiesSegue" id="tBn-jx-3kN"/>
                                 </connections>
@@ -131,8 +131,8 @@
                             <constraint firstAttribute="trailing" secondItem="Fmz-yz-JVY" secondAttribute="trailing" id="Ckt-e5-Q3s"/>
                             <constraint firstItem="Fmz-yz-JVY" firstAttribute="leading" secondItem="jdo-ty-BjJ" secondAttribute="leading" id="DtI-BN-aMe"/>
                             <constraint firstItem="Da8-gg-6RC" firstAttribute="leading" secondItem="jdo-ty-BjJ" secondAttribute="leading" id="FM2-HI-4vP"/>
-                            <constraint firstItem="Da8-gg-6RC" firstAttribute="top" secondItem="Fmz-yz-JVY" secondAttribute="bottom" constant="8" id="GT7-Un-uux"/>
                             <constraint firstAttribute="trailing" secondItem="Da8-gg-6RC" secondAttribute="trailing" id="e0K-iz-YJi"/>
+                            <constraint firstItem="Da8-gg-6RC" firstAttribute="top" secondItem="Fmz-yz-JVY" secondAttribute="bottom" id="i57-kl-0gD"/>
                             <constraint firstItem="Fmz-yz-JVY" firstAttribute="top" secondItem="m7U-GS-Nh1" secondAttribute="bottom" id="i80-rm-QaA"/>
                         </constraints>
                     </view>
@@ -207,17 +207,17 @@
             <objects>
                 <tableViewController id="Lad-SO-96z" customClass="ContactsTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dum-RD-VSX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36078432199999999" green="0.68235296010000002" blue="0.82352942230000004" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="S7a-cB-7GD">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soulmate 😍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6W-vC-Sv6">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😍 Soulmate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6W-vC-Sv6">
                                     <rect key="frame" x="16" y="0.0" width="99" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q38-GA-n36">
@@ -225,13 +225,15 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="2dM-yP-Q2q"/>
                                     </constraints>
-                                    <state key="normal" title="Set"/>
+                                    <state key="normal" title="Set">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="YBl-2W-YD6"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.36078432202339172" green="0.68235296010971069" blue="0.82352942228317261" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="Z6W-vC-Sv6" firstAttribute="leading" secondItem="S7a-cB-7GD" secondAttribute="leading" constant="16" id="1WQ-4x-xU4"/>
                                 <constraint firstItem="Z6W-vC-Sv6" firstAttribute="top" secondItem="S7a-cB-7GD" secondAttribute="top" id="Av1-1K-Mjy"/>
@@ -283,17 +285,17 @@
             <objects>
                 <tableViewController id="5Zr-fd-9bX" customClass="ContactsTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zx5-Ik-HmG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="440"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="a2R-VC-llk">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buddies 🍻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-fX-bOe">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍻 Buddies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-fX-bOe">
                                     <rect key="frame" x="16" y="0.0" width="89" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-oH-xst">
@@ -301,14 +303,16 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="I4E-1t-DoE"/>
                                     </constraints>
-                                    <state key="normal" title="Add"/>
+                                    <state key="normal" title="Add">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="Msj-UA-yo8"/>
                                         <action selector="addTapped" destination="5Zr-fd-9bX" eventType="touchUpInside" id="ScC-gI-bsk"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="jhc-fX-bOe" secondAttribute="bottom" id="D4I-p3-TYy"/>
                                 <constraint firstItem="jhc-fX-bOe" firstAttribute="leading" secondItem="a2R-VC-llk" secondAttribute="leading" constant="16" id="ZVy-rZ-9eQ"/>
