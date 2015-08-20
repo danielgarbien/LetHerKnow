@@ -27,11 +27,17 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVt-tQ-YP7">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="246"/>
-                                                        <state key="normal" title="😇 HOME"/>
+                                                        <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="😇 HOME">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-lV-bN2">
                                                         <rect key="frame" x="300" y="0.0" width="300" height="246"/>
-                                                        <state key="normal" title="🍻 BAR"/>
+                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.68235294120000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="🍻 BAR">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -40,11 +46,17 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qte-hF-ycR">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="246"/>
-                                                        <state key="normal" title="😘 LOVE"/>
+                                                        <color key="backgroundColor" red="0.80784313730000001" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="🕖 LATE">
+                                                            <color key="titleColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZe-7n-0VH">
                                                         <rect key="frame" x="300" y="0.0" width="300" height="246"/>
-                                                        <state key="normal" title="🕖 LATE"/>
+                                                        <color key="backgroundColor" red="0.97254901959999995" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="😘 LOVE">
+                                                            <color key="titleColor" red="1" green="0.94936603307723999" blue="0.95660179853439331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -52,10 +64,13 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-0J-ake">
                                         <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="K1C-YS-LPi"/>
                                         </constraints>
-                                        <state key="normal" title="Configure"/>
+                                        <state key="normal" title="Configure">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="QFP-84-LRc" kind="show" id="0hZ-I4-bw4"/>
                                         </connections>
@@ -63,7 +78,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99991601705551147" green="1" blue="0.99987190961837769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hhN-6y-Oda" secondAttribute="bottom" id="LRU-80-6Se"/>
                             <constraint firstItem="hhN-6y-Oda" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hYX-Z8-Y9c"/>
