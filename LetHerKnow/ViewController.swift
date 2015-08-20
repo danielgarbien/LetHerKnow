@@ -18,6 +18,8 @@ class ViewController: UIViewController, ContextAware {
         case let cvc as ConfigurationViewController:
             cvc.mainContext = mainContext
             cvc.delegate = self
+        case let rpvc as ReceiverPickerViewController:
+            rpvc.mainContext = mainContext
         default:
             assertionFailure("Unrecognized segue destination view controller")
         }
