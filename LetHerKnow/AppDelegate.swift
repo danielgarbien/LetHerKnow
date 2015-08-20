@@ -27,6 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             assertionFailure("Root view controller must be ContextAware")
         }
         
+        // Appearance
+        UINavigationBar.appearance().titleTextAttributes =
+            [NSForegroundColorAttributeName : UIColor(knotColor: .Navy)]
+        UINavigationBar.appearance().tintColor = UIColor(knotColor: .Navy)
+        
         // Workaround for a beta 4 bug, permission should not be required, removed after it is resolved
         // https://forums.developer.apple.com/thread/12275
         let cn = CNContactStore()
