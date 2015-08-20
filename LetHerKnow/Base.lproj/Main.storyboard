@@ -110,16 +110,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmz-yz-JVY">
-                                <rect key="frame" x="0.0" y="64" width="600" height="96"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="aSe-bM-brH"/>
+                                    <constraint firstAttribute="height" constant="100" id="aSe-bM-brH"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="Lad-SO-96z" kind="embed" identifier="soulmateSegue" id="Xv8-QW-zoy"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da8-gg-6RC">
-                                <rect key="frame" x="0.0" y="160" width="600" height="440"/>
+                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
                                 <connections>
                                     <segue destination="5Zr-fd-9bX" kind="embed" identifier="buddiesSegue" id="tBn-jx-3kN"/>
                                 </connections>
@@ -207,7 +207,7 @@
             <objects>
                 <tableViewController id="Lad-SO-96z" customClass="ContactsTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dum-RD-VSX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.36078432199999999" green="0.68235296010000002" blue="0.82352942230000004" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="S7a-cB-7GD">
@@ -285,7 +285,7 @@
             <objects>
                 <tableViewController id="5Zr-fd-9bX" customClass="ContactsTableViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zx5-Ik-HmG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="440"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="a2R-VC-llk">
