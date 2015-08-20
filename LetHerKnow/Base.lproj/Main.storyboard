@@ -217,7 +217,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soulmate 😍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6W-vC-Sv6">
                                     <rect key="frame" x="16" y="0.0" width="99" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q38-GA-n36">
@@ -225,7 +225,9 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="2dM-yP-Q2q"/>
                                     </constraints>
-                                    <state key="normal" title="Set"/>
+                                    <state key="normal" title="Set">
+                                        <color key="titleColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="YBl-2W-YD6"/>
                                     </connections>
@@ -293,7 +295,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buddies 🍻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-fX-bOe">
                                     <rect key="frame" x="16" y="0.0" width="89" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-oH-xst">
@@ -301,7 +303,9 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="I4E-1t-DoE"/>
                                     </constraints>
-                                    <state key="normal" title="Add"/>
+                                    <state key="normal" title="Add">
+                                        <color key="titleColor" red="0.1294117719" green="0.18431372939999999" blue="0.24705882370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="addTapped" destination="Lad-SO-96z" eventType="touchUpInside" id="Msj-UA-yo8"/>
                                         <action selector="addTapped" destination="5Zr-fd-9bX" eventType="touchUpInside" id="ScC-gI-bsk"/>

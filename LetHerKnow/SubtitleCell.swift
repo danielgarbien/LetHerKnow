@@ -13,6 +13,8 @@ class SubtitleCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .Subtitle, reuseIdentifier: reuseIdentifier)
+        self.textLabel?.textColor = UIColor(knotColor: .Navy)
+        self.detailTextLabel?.textColor = UIColor(knotColor: .Navy)
     }
 
     required init?(coder aDecoder: NSCoder) {
