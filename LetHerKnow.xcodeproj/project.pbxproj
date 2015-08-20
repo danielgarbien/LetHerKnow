@@ -31,6 +31,8 @@
 		65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */; };
 		65B7B46D1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7B46C1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift */; };
 		65E80D971B85ADC200DB5009 /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D961B85ADC200DB5009 /* SubtitleCell.swift */; };
+		65E80D9A1B85EDF300DB5009 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D991B85EDF300DB5009 /* UIColor+Hex.swift */; };
+		65E80D9D1B85EE6E00DB5009 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D9C1B85EE6E00DB5009 /* UIColor+Palette.swift */; };
 		65F224251B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */; };
 		65F224261B847C7100F0D3B1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224231B847C7100F0D3B1 /* PhoneNumber.swift */; };
 		65F224271B847C7100F0D3B1 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */; };
@@ -85,6 +87,8 @@
 		65B7B4621B7E0AB7008C3EF4 /* CNContact+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CNContact+Convenience.swift"; sourceTree = "<group>"; };
 		65B7B46C1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyContactPickerHandler.swift; sourceTree = "<group>"; };
 		65E80D961B85ADC200DB5009 /* SubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleCell.swift; sourceTree = "<group>"; };
+		65E80D991B85EDF300DB5009 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		65E80D9C1B85EE6E00DB5009 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65F224231B847C7100F0D3B1 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -254,9 +258,19 @@
 		65E80D951B85AD7800DB5009 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65E80D981B85EDD800DB5009 /* Helpers */,
 				65E80D961B85ADC200DB5009 /* SubtitleCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		65E80D981B85EDD800DB5009 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				65E80D991B85EDF300DB5009 /* UIColor+Hex.swift */,
+				65E80D9C1B85EE6E00DB5009 /* UIColor+Palette.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		65F224281B847CC400F0D3B1 /* Helpers */ = {
@@ -407,10 +421,12 @@
 				65F224271B847C7100F0D3B1 /* Contact+CoreDataProperties.swift in Sources */,
 				65A5964D1B836C2B00A4EEAC /* BuddiesTableInternalsFactory.swift in Sources */,
 				65A5964B1B83629300A4EEAC /* SoulmateTableInternalsFactory.swift in Sources */,
+				65E80D9A1B85EDF300DB5009 /* UIColor+Hex.swift in Sources */,
 				65F224261B847C7100F0D3B1 /* PhoneNumber.swift in Sources */,
 				65E80D971B85ADC200DB5009 /* SubtitleCell.swift in Sources */,
 				65B7B46D1B7E235B008C3EF4 /* BuddyContactPickerHandler.swift in Sources */,
 				65AFC9671B7B8F5100516B79 /* Model.xcdatamodeld in Sources */,
+				65E80D9D1B85EE6E00DB5009 /* UIColor+Palette.swift in Sources */,
 				659B34341B7A23C800483C06 /* AppDelegate.swift in Sources */,
 				6559562F1B7CB74E004E77A7 /* NSManagedObjectContextHelper.swift in Sources */,
 				65B7B45B1B7DE2A1008C3EF4 /* NSFetchRequest+Contact.swift in Sources */,
