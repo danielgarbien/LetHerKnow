@@ -20,6 +20,7 @@ class ViewController: UIViewController, ContextAware {
             cvc.delegate = self
         case let rpvc as ReceiverPickerViewController:
             rpvc.mainContext = mainContext
+            rpvc.title = (sender as? UIButton)?.titleLabel?.text
         default:
             assertionFailure("Unrecognized segue destination view controller")
         }
