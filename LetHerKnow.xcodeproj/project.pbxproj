@@ -33,7 +33,7 @@
 		65E80D971B85ADC200DB5009 /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D961B85ADC200DB5009 /* SubtitleCell.swift */; };
 		65E80D9A1B85EDF300DB5009 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D991B85EDF300DB5009 /* UIColor+Hex.swift */; };
 		65E80D9D1B85EE6E00DB5009 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E80D9C1B85EE6E00DB5009 /* UIColor+Palette.swift */; };
-		65E83C7D1B85FE950064E2D8 /* ReceiverPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E83C7C1B85FE950064E2D8 /* ReceiverPickerViewController.swift */; };
+		65E83C7D1B85FE950064E2D8 /* MessageSenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E83C7C1B85FE950064E2D8 /* MessageSenderViewController.swift */; };
 		65F224251B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */; };
 		65F224261B847C7100F0D3B1 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224231B847C7100F0D3B1 /* PhoneNumber.swift */; };
 		65F224271B847C7100F0D3B1 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */; };
@@ -90,7 +90,7 @@
 		65E80D961B85ADC200DB5009 /* SubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleCell.swift; sourceTree = "<group>"; };
 		65E80D991B85EDF300DB5009 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		65E80D9C1B85EE6E00DB5009 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
-		65E83C7C1B85FE950064E2D8 /* ReceiverPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverPickerViewController.swift; sourceTree = "<group>"; };
+		65E83C7C1B85FE950064E2D8 /* MessageSenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSenderViewController.swift; sourceTree = "<group>"; };
 		65F224221B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65F224231B847C7100F0D3B1 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		65F224241B847C7100F0D3B1 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 		65E83C7B1B85FE720064E2D8 /* Reveiver Picker */ = {
 			isa = PBXGroup;
 			children = (
-				65E83C7C1B85FE950064E2D8 /* ReceiverPickerViewController.swift */,
+				65E83C7C1B85FE950064E2D8 /* MessageSenderViewController.swift */,
 			);
 			name = "Reveiver Picker";
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 				65FF92F51B7CDBBE0011C7CC /* ContextAware.swift in Sources */,
 				65F224251B847C7100F0D3B1 /* PhoneNumber+CoreDataProperties.swift in Sources */,
 				659B34361B7A23C800483C06 /* ViewController.swift in Sources */,
-				65E83C7D1B85FE950064E2D8 /* ReceiverPickerViewController.swift in Sources */,
+				65E83C7D1B85FE950064E2D8 /* MessageSenderViewController.swift in Sources */,
 				65A596491B835D5A00A4EEAC /* ContactsTableViewController.swift in Sources */,
 				65B7B4631B7E0AB7008C3EF4 /* CNContact+Convenience.swift in Sources */,
 				65A596471B83596A00A4EEAC /* SoulmateContactPickerHandler.swift in Sources */,

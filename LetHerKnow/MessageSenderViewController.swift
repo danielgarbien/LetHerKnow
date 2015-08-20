@@ -1,5 +1,5 @@
 //
-//  ReceiverPickerViewController.swift
+//  MessageSenderViewController.swift
 //  LetHerKnow
 //
 //  Created by Daniel Garbień on 20/08/15.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreData
 
-class ReceiverPickerViewController: UIViewController, ContextAware {
+class MessageSenderViewController: UIViewController, ContextAware {
     
     var mainContext: NSManagedObjectContext!
     var message: String!

@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="676" y="1217"/>
         </scene>
-        <!--Receiver Picker View Controller-->
+        <!--Message Sender View Controller-->
         <scene sceneID="yDP-gN-6yQ">
             <objects>
-                <viewController id="zWf-uE-EfY" customClass="ReceiverPickerViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zWf-uE-EfY" customClass="MessageSenderViewController" customModule="LetHerKnow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ObJ-jj-WGT"/>
                         <viewControllerLayoutGuide type="bottom" id="bMg-xH-86u"/>
