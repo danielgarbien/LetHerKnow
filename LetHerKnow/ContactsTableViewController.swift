@@ -16,6 +16,7 @@ protocol ContactsTableInternalsFactory {
     func fetchRequest() -> NSFetchRequest
     func contactPickerHandlerWithContext(context: NSManagedObjectContext) -> ContactPickerHandler
     func contactPickerViewControllerWithContext(context: NSManagedObjectContext) -> CNContactPickerViewController
+    func cellClass() -> AnyClass
 }
 
 class ContactsTableViewController: UITableViewController, ContextAware {
@@ -37,7 +38,7 @@ class ContactsTableViewController: UITableViewController, ContextAware {
     
     override func viewDidLoad() {
         // register a cell class
-        tableView.registerClass(SubtitleCell.classForCoder(),
+        tableView.registerClass(internalsFactory.cellClass(),
             forCellReuseIdentifier: ContactsTableViewController.contactCellIdentifier)
         
         // clear footer view

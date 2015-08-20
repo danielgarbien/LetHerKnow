@@ -38,4 +38,8 @@ struct BuddiesTableInternalsFactory: ContactsTableInternalsFactory {
         
         return contactPicker
     }
+    
+    func cellClass() -> AnyClass {
+        return BuddyCell.classForCoder()
+    }
 }

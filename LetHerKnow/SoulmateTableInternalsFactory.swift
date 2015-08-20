@@ -36,4 +36,8 @@ struct SoulmateTableInternalsFactory: ContactsTableInternalsFactory {
         contactPicker.predicateForSelectionOfContact = NSPredicate(format: "phoneNumbers.@count == 1")
         return contactPicker
     }
+    
+    func cellClass() -> AnyClass {
+        return SoulmateCell.classForCoder()
+    }
 }
