@@ -162,6 +162,9 @@
                                         <state key="normal" title="😍 SOULMATE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="soulmateTapped" destination="zWf-uE-EfY" eventType="touchUpInside" id="Mt4-hx-x4S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Y-iV-RMO">
                                         <rect key="frame" x="0.0" y="179" width="600" height="178"/>
@@ -169,6 +172,9 @@
                                         <state key="normal" title="🍻 BUDDIES">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buddiesTapped" destination="zWf-uE-EfY" eventType="touchUpInside" id="60g-aK-knl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-zp-sR5">
                                         <rect key="frame" x="0.0" y="357" width="600" height="179"/>
@@ -176,6 +182,9 @@
                                         <state key="normal" title="ELSE...">
                                             <color key="titleColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="elseTapped" destination="zWf-uE-EfY" eventType="touchUpInside" id="YGx-9Y-qET"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

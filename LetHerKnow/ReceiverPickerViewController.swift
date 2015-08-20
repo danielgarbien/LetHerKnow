@@ -13,4 +13,18 @@ import CoreData
 class ReceiverPickerViewController: UIViewController, ContextAware {
     
     var mainContext: NSManagedObjectContext!
+    var message: String!
+    
+    
+    @IBAction func soulmateTapped() {
+        print(message)
+    }
+    
+    @IBAction func buddiesTapped() {
+        print(message)
+    }
+    
+    @IBAction func elseTapped() {
+        print(message)
+    }
 }
