@@ -128,7 +128,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoulmateCell" textLabel="Jqz-y1-3f3" detailTextLabel="Duo-id-FyX" style="IBUITableViewCellStyleSubtitle" id="JJ6-c9-5bt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoulmateCell" textLabel="Jqz-y1-3f3" detailTextLabel="Duo-id-FyX" style="IBUITableViewCellStyleSubtitle" id="JJ6-c9-5bt" customClass="SubtitleCell" customModule="LetHerKnow" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="contactCellIdentifier" tableViewCell="JJ6-c9-5bt" id="Ioy-9R-zEU">
@@ -205,7 +205,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuddyCell" id="Hm7-3F-bX7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuddyCell" id="Hm7-3F-bX7" customClass="SubtitleCell" customModule="LetHerKnow" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hm7-3F-bX7" id="hEJ-JW-eE6">

@@ -37,7 +37,7 @@ class ContactsTableViewController: UITableViewController, ContextAware {
     
     override func viewDidLoad() {
         // register a cell class
-        tableView.registerClass(UITableViewCell.classForCoder(),
+        tableView.registerClass(SubtitleCell.classForCoder(),
             forCellReuseIdentifier: ContactsTableViewController.contactCellIdentifier)
         
         // clear footer view
