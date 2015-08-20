@@ -9,22 +9,68 @@
 import Foundation
 import UIKit
 import CoreData
+import MessageUI
 
 class MessageSenderViewController: UIViewController, ContextAware {
     
     var mainContext: NSManagedObjectContext!
     var message: String!
     
-    
     @IBAction func soulmateTapped() {
-        print(message)
+        guard let phoneNumber = mainContext.fetchSoulmate()?.phoneNumber.value else {
+            presentViewController(UIAlertController.cancelAlertWithTitle("You have no soulmate 😔"),
+                animated: true, completion: nil)
+            return
+        }
+        composeMessage(message, recipients: [phoneNumber])
     }
     
     @IBAction func buddiesTapped() {
-        print(message)
+        let phoneNumbers = mainContext.fetchBuddies().map{ $0.phoneNumber.value }
+        guard phoneNumbers.count > 0 else {
+            presentViewController(UIAlertController.cancelAlertWithTitle("You have no buddies 😔"),
+                animated: true, completion: nil)
+            return
+        }
+        composeMessage(message, recipients: phoneNumbers)
     }
     
     @IBAction func elseTapped() {
-        print(message)
+        composeMessage(message, recipients: [])
+    }
+    
+    private func composeMessage(message: String, recipients: [String]?) {
+        guard MFMessageComposeViewController.canSendText() else {
+            presentViewController(UIAlertController.cancelAlertWithTitle("Cannot send text 😔"),
+                animated: true, completion: nil)
+            return
+        }
+        
+        let messageComposeVC = MFMessageComposeViewController(navigationBarClass: nil, toolbarClass: nil)
+        messageComposeVC.body = message
+        messageComposeVC.recipients = recipients
+        messageComposeVC.messageComposeDelegate = self
+        presentViewController(messageComposeVC, animated: true, completion: nil)
+    }
+}
+
+// MARK: MFMessageComposeViewControllerDelegate
+extension MessageSenderViewController: MFMessageComposeViewControllerDelegate {
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
+extension UIAlertController {
+    
+    class func cancelAlertWithTitle(title: String) -> UIAlertController {
+        let alert = UIAlertController(
+            title: title,
+            message: nil,
+            preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(cancelAction)
+        return alert
     }
 }
