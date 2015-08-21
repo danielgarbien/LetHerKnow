@@ -35,13 +35,13 @@ class ViewController: UIViewController, ContextAware {
         
         switch identifier {
         case "homeSegue":
-            return "I'm home, safe."
+            return NSLocalizedString("I'm home, safe.", comment: "Text message")
         case "barSegue":
-            return "I'm at a bar, wanna join?"
+            return NSLocalizedString("I'm at a bar, wanna join?", comment: "Text message")
         case "lateSegue":
-            return "I'm going to be late."
+            return NSLocalizedString("I'm going to be late.", comment: "Text message")
         case "loveSegue":
-            return ":*"
+            return NSLocalizedString(":*", comment: "Text message")
         default:
             assertionFailure()
             return ""
