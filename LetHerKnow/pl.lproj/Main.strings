@@ -1,0 +1,51 @@
+
+/* Class = "UIBarButtonItem"; title = "🔧"; ObjectID = "B2E-KK-0YO"; */
+"B2E-KK-0YO.title" = "🔧";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Duo-id-FyX"; */
+"Duo-id-FyX.text" = "Podtytuł";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Jqz-y1-3f3"; */
+"Jqz-y1-3f3.text" = "Tytuł";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "KCS-oH-xst"; */
+"KCS-oH-xst.normalTitle" = "Dodaj";
+
+/* Class = "UIButton"; normalTitle = "😍 SOULMATE"; ObjectID = "MsH-Zv-RVI"; */
+"MsH-Zv-RVI.normalTitle" = "😍 BRATNIA DUSZA";
+
+/* Class = "UINavigationController"; title = "Let Her Know"; ObjectID = "Ovs-xG-ep6"; */
+"Ovs-xG-ep6.title" = "Let Her Know";
+
+/* Class = "UIViewController"; title = "Configuration"; ObjectID = "QFP-84-LRc"; */
+"QFP-84-LRc.title" = "Konfiguracja";
+
+/* Class = "UIButton"; normalTitle = "😇 HOME"; ObjectID = "WVt-tQ-YP7"; */
+"WVt-tQ-YP7.normalTitle" = "😇 DOM";
+
+/* Class = "UILabel"; text = "😍 Soulmate"; ObjectID = "Z6W-vC-Sv6"; */
+"Z6W-vC-Sv6.text" = "😍 Bratnia dusza";
+
+/* Class = "UIButton"; normalTitle = "🍻 BUDDIES"; ObjectID = "a3Y-iV-RMO"; */
+"a3Y-iV-RMO.normalTitle" = "🍻 ZIOMKI";
+
+/* Class = "UILabel"; text = "🍻 Buddies"; ObjectID = "jhc-fX-bOe"; */
+"jhc-fX-bOe.text" = "🍻 Ziomki";
+
+/* Class = "UIButton"; normalTitle = "😘 LOVE"; ObjectID = "lZe-7n-0VH"; */
+"lZe-7n-0VH.normalTitle" = "😘 MIŁOŚĆ";
+
+/* Class = "UIButton"; normalTitle = "Set"; ObjectID = "q38-GA-n36"; */
+"q38-GA-n36.normalTitle" = "Wybierz";
+
+/* Class = "UIButton"; normalTitle = "🕖 LATE"; ObjectID = "qte-hF-ycR"; */
+"qte-hF-ycR.normalTitle" = "🕖 POŚLIZG";
+
+/* Class = "UIButton"; normalTitle = "ELSE..."; ObjectID = "sjK-zp-sR5"; */
+"sjK-zp-sR5.normalTitle" = "INNY...";
+
+/* Class = "UINavigationItem"; title = "Let Her Know"; ObjectID = "x8v-QG-ykD"; */
+"x8v-QG-ykD.title" = "Let Her Know";
+
+/* Class = "UIButton"; normalTitle = "🍻 BAR"; ObjectID = "xeH-lV-bN2"; */
+"xeH-lV-bN2.normalTitle" = "🍻 BAR";
