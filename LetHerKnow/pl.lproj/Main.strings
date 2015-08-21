@@ -14,9 +14,6 @@
 /* Class = "UIButton"; normalTitle = "😍 SOULMATE"; ObjectID = "MsH-Zv-RVI"; */
 "MsH-Zv-RVI.normalTitle" = "😍 BRATNIA DUSZA";
 
-/* Class = "UINavigationController"; title = "Let Her Know"; ObjectID = "Ovs-xG-ep6"; */
-"Ovs-xG-ep6.title" = "Let Her Know";
-
 /* Class = "UIViewController"; title = "Configuration"; ObjectID = "QFP-84-LRc"; */
 "QFP-84-LRc.title" = "Konfiguracja";
 
@@ -44,8 +41,8 @@
 /* Class = "UIButton"; normalTitle = "ELSE..."; ObjectID = "sjK-zp-sR5"; */
 "sjK-zp-sR5.normalTitle" = "INNY...";
 
-/* Class = "UINavigationItem"; title = "Let Her Know"; ObjectID = "x8v-QG-ykD"; */
-"x8v-QG-ykD.title" = "Let Her Know";
+/* Class = "UINavigationItem"; title = "Let 'Em Know"; ObjectID = "x8v-QG-ykD"; */
+"x8v-QG-ykD.title" = "Daj im znać";
 
 /* Class = "UIButton"; normalTitle = "🍻 BAR"; ObjectID = "xeH-lV-bN2"; */
 "xeH-lV-bN2.normalTitle" = "🍻 BAR";
