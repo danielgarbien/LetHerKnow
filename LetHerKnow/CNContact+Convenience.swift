@@ -16,6 +16,6 @@ extension CNContact {
             return nickname
         }
         let nameComponents = [namePrefix, givenName, middleName, familyName, nameSuffix].filter(){ $0.isEmpty == false }
-        return " ".join(nameComponents)
+        return nameComponents.joinWithSeparator(" ")
     }
 }
