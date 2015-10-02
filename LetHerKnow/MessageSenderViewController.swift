@@ -18,7 +18,7 @@ class MessageSenderViewController: UIViewController, ContextAware {
     
     @IBAction func soulmateTapped() {
         guard let phoneNumber = mainContext.fetchSoulmate()?.phoneNumber.value else {
-            presentViewController(UIAlertController.cancelAlertWithTitle("You have no soulmate 😔"),
+            presentViewController(UIAlertController.cancelAlertWithTitle(NSLocalizedString("You have no soulmate 😔", comment: "Alert")),
                 animated: true, completion: nil)
             return
         }
@@ -28,7 +28,7 @@ class MessageSenderViewController: UIViewController, ContextAware {
     @IBAction func buddiesTapped() {
         let phoneNumbers = mainContext.fetchBuddies().map{ $0.phoneNumber.value }
         guard phoneNumbers.count > 0 else {
-            presentViewController(UIAlertController.cancelAlertWithTitle("You have no buddies 😔"),
+            presentViewController(UIAlertController.cancelAlertWithTitle(NSLocalizedString("You have no buddies 😔", comment: "Alert")),
                 animated: true, completion: nil)
             return
         }
@@ -41,7 +41,7 @@ class MessageSenderViewController: UIViewController, ContextAware {
     
     private func composeMessage(message: String, recipients: [String]?) {
         guard MFMessageComposeViewController.canSendText() else {
-            presentViewController(UIAlertController.cancelAlertWithTitle("Cannot send text 😔"),
+            presentViewController(UIAlertController.cancelAlertWithTitle(NSLocalizedString("Cannot send text 😔", comment: "Alert")),
                 animated: true, completion: nil)
             return
         }
@@ -69,7 +69,8 @@ extension UIAlertController {
             title: title,
             message: nil,
             preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("OK", comment: "In alert button"),
+            style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
         return alert
     }

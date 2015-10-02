@@ -1,6 +1,9 @@
 /* Text message */
 ":*" = ":*";
 
+/* Alert */
+"Cannot send text 😔" = "Nie mozna wyslac wiadomosci 😔";
+
 /* Text message */
 "I'm going to be late." = "Spoznie sie...";
 
@@ -9,4 +12,13 @@
 
 /* Text message */
 "I'm in a bar, wanna join?" = "Siedze w barze, wpadniesz?";
+
+/* In alert button */
+"OK" = "OK";
+
+/* Alert */
+"You have no buddies 😔" = "Nie masz ziomkow 😔";
+
+/* Alert */
+"You have no soulmate 😔" = "Nie masz bratniej duszy 😔";
 
