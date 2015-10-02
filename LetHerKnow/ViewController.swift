@@ -37,7 +37,7 @@ class ViewController: UIViewController, ContextAware {
         case "homeSegue":
             return NSLocalizedString("I'm home, safe.", comment: "Text message")
         case "barSegue":
-            return NSLocalizedString("I'm at a bar, wanna join?", comment: "Text message")
+            return NSLocalizedString("I'm in a bar, wanna join?", comment: "Text message")
         case "lateSegue":
             return NSLocalizedString("I'm going to be late.", comment: "Text message")
         case "loveSegue":
