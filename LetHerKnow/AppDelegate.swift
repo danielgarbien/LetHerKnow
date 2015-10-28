@@ -32,11 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             [NSForegroundColorAttributeName : UIColor(knotColor: .Navy)]
         UINavigationBar.appearance().tintColor = UIColor(knotColor: .Navy)
         
-        // Workaround for a beta 4 bug, permission should not be required, removed after it is resolved
-        // https://forums.developer.apple.com/thread/12275
-        let cn = CNContactStore()
-        cn.requestAccessForEntityType(CNEntityType.Contacts) { (success: Bool, error: NSError?) -> Void in }
-        
         return true
     }
     
